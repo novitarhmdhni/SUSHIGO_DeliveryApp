@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SUSHIGO</string>
+    <string name="spicyikuraroll" />
+    <string name="sushi_roll">SUSHI ROLL</string>
+    <string name="salmonebi" />
+    <string name="orangesmoothie" />
+    <string name="orangevanilla" />
+    <string name="cappcuni" />
+    <string name="thaitea" />
+    <string name="tea" />
+    <string name="bubbletea" />
+    <string name="match" />
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sushigo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SUSHIGO"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity_user"
+            android:exported="false" />
+        <activity
+            android:name=".OrderSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".PemesanActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity_admin"
+            android:exported="false" />
+        <activity android:name=".LatteActivity" />
+        <activity android:name=".SummaryActivity" />
+        <activity android:name=".InfoActivity" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".Login_SushiGo"
+            android:exported="false" />
+        <activity
+            android:name=".ListMakanan"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <provider
+            android:name=".Database.OrderProvider"
+            android:authorities="com.example.sushigo"
+            android:exported="true" />
+    </application>
+
+</manifest>
